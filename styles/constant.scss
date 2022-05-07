@@ -1,0 +1,16 @@
+$glassBackground: linear-gradient(
+  108.98deg,
+  rgba(12, 5, 5, 0.418) 0%,
+  rgba(0, 0, 0, 0.253) 100%
+);
+$glassBlur: blur(25px);
+
+@mixin glassProperty {
+  background: $glassBackground;
+  backdrop-filter: $glassBlur;
+}
+
+$primaryColor: #cafc01;
+$secondaryColor: #d7d6ff;
+$iconColor: #d7d6ff9f;
+$borderColor: #d7d6ff3d;

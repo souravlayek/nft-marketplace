@@ -1,0 +1,8 @@
+export {default as DashboardIcon} from "./Dashboard"
+export {default as MarketPlaceIcon} from "./MarketPlace"
+export {default as ActiveBidsIcon} from "./ActiveBids"
+export {default as EnvelopIcon} from "./Envelop"
+export {default as HeartIcon} from "./Heart"
+export {default as HistoryIcon} from "./History"
+export {default as SettingsIcon} from "./Settings"
+export {default as WalletIcon} from "./Wallet"

@@ -1,0 +1,43 @@
+@import "/styles/constant.scss";
+
+.menuItem {
+  height: 25px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  .menuItemContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      height: fit-content;
+    }
+
+    .label {
+      line-height: 100%;
+      color: $secondaryColor;
+    }
+  }
+
+  .sidebar {
+    width: 3px;
+    height: 25px;
+    background-color: $primaryColor;
+  }
+}
+
+.active {
+  .menuItemContent {
+    .label {
+      color: $primaryColor;
+    }
+  }
+}
