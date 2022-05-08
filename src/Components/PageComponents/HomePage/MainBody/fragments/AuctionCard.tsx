@@ -2,6 +2,7 @@ import { Button, GroupedAvatar } from "Components/UI";
 import { HeartIcon } from "Icons";
 import Image from "next/image";
 import React from "react";
+import { useCountDownTimer } from "utils";
 import styles from "./styles/auctionCard.module.scss";
 
 type Props = {};
@@ -12,6 +13,8 @@ const userList = [
   "/assets/images/people/p4.jpg",
 ]
 const AuctionCard = (props: Props) => {
+  const time = useCountDownTimer()
+
   return (
     <div className={styles.auctionCard}>
       <div className={styles.imageContainer}>
@@ -43,9 +46,9 @@ const AuctionCard = (props: Props) => {
       <div className={styles.auctionClock}>
         <div className={styles.title}>Auction Ends in</div>
         <div className={styles.clock}>
-          <div className={styles.timeBox}>28h</div>
-          <div className={styles.timeBox}>46m</div>
-          <div className={styles.timeBox}>38s</div>
+          <div className={styles.timeBox}>{time.h}h</div>
+          <div className={styles.timeBox}>{time.m}m</div>
+          <div className={styles.timeBox}>{time.s}s</div>
         </div>
 
       </div>

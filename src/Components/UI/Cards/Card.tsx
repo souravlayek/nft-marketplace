@@ -2,6 +2,7 @@ import { ProfileWithDetails } from "Components/Profile";
 import { HeartIcon } from "Icons";
 import Image from "next/image";
 import React from "react";
+import { useCountDownTimer } from "utils";
 import { Button } from "../Buttons";
 import styles from "./styles/card.module.scss";
 
@@ -22,6 +23,7 @@ user,
 solValue,
 usdValue,
 }: Props) => {
+  const time = useCountDownTimer()
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -35,7 +37,7 @@ usdValue,
             objectFit="cover"
           />
         </div>
-        <div className={styles.clock}>12h: 43m: 10s</div>
+        <div className={styles.clock}>{time.h}h: {time.m}m: {time.s}s</div>
         <div className={styles.likeButton}>
           <HeartIcon />
         </div>
