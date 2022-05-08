@@ -1,13 +1,14 @@
 import React from 'react'
-import { Hero } from './fragments'
+import { Hero, TopSellers } from './fragments'
 
 type Props = {}
 
 const MainBodyContent = (props: Props) => {
   return (
     <div>
-      <div className="left">
+      <div  className="left">
       <Hero />
+      <TopSellers />
       </div>
       <div className="right">
 
