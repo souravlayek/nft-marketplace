@@ -2,6 +2,7 @@ import { ProfileWithDetails,
   ContentHeading } from "Components";
 import { NextArrowIcon, PreviousArrowIcon } from "Icons";
 import React from "react";
+import { TOP_SELLERS } from "utils";
 import styles from "./styles/topSeller.module.scss";
 
 type Props = {};
@@ -15,60 +16,11 @@ const TopSellers = (props: Props) => {
           <PreviousArrowIcon />
         </div>
         <div className={styles.profileList}>
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
+          {TOP_SELLERS.map((item,index) => <ProfileWithDetails
+          key={item.name}
             hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
-          <ProfileWithDetails
-            profileImage="/assets/images/people/p1.jpg"
-            name="@xsullo"
-            userType="SK NFTs sold"
-            hasNotification={false}
-          />
+            {...item}
+          />)}
         </div>
         <div className={`${styles.scrollButton} ${styles.nextButton}`}>
           <NextArrowIcon />
