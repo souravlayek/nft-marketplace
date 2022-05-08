@@ -40,7 +40,6 @@
         margin-top: 40px;
         border-top: 1px solid $borderColor;
         padding: 15px 0 0 15px;
-
       }
     }
 
@@ -51,10 +50,14 @@
       align-items: flex-end;
     }
   }
-
   .main {
     width: 85%;
-
     padding: 15px;
+    .topBar {
+      height: 70px;
+    }
+    .content {
+      height: calc(100% - 70px);
+    }
   }
 }

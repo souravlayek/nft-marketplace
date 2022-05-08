@@ -1,4 +1,4 @@
-import { MarketPlaceMenu, MenuItem, ProfileMenu } from "Components";
+import { MarketPlaceMenu, MenuItem, ProfileMenu, TopBar } from "Components";
 import { LogoutIcon } from "Icons";
 import React from "react";
 import styles from "./styles/layout.module.scss";
@@ -26,7 +26,9 @@ const MyLayout = (props: Props) => {
         </div>
       </div>
       <main className={styles.main}>
-        <div className={styles.topBar}></div>
+        <div className={styles.topBar}>
+          <TopBar />
+        </div>
         <div className={styles.content}>{props.children}</div>
       </main>
     </div>

@@ -1,0 +1,21 @@
+@import "/styles/constant.scss";
+.justDroppedContainer {
+  margin: 10px 0;
+  .topBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .viewAll {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $secondaryColor;
+      font-size: 14px;
+    }
+  }
+  .cardList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

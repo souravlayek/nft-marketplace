@@ -1,0 +1,86 @@
+@import "/styles/constant.scss";
+.card {
+  @include glassProperty;
+  padding: 15px 12px;
+  border: 1px solid $borderColor;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  border-radius: 0 10px 0 10px;
+  .imageContainer {
+    height: 200px;
+    position: relative;
+    border-radius: 0 10px 0 10px;
+    overflow: hidden;
+    .imageWrapper {
+      width: 100%;
+      height: 100%;
+      & > span {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .clock {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondaryColor;
+      @include glassProperty;
+      height: 40px;
+      padding: 0 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 10px 0 10px;
+    }
+    .likeButton {
+      position: absolute;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 5px;
+      right: 5px;
+      @include glassProperty;
+      padding: 0 10px;
+      border-radius: 0 10px 0 10px;
+    }
+  }
+  .profile {
+    margin-bottom: 20px;
+  }
+  .bidding {
+    margin: 5px 0;
+    .bidTitle {
+      font-size: 10px;
+      line-height: 100%;
+      margin-bottom: 5px;
+      color: $secondaryColor;
+      text-transform: uppercase;
+      opacity: 0.6;
+    }
+    .biddingValue {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .sol,
+      .usd {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: $secondaryColor;
+        font-weight: 500;
+      }
+    }
+  }
+  .buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+  }
+}
