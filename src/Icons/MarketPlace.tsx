@@ -5,8 +5,8 @@ type Props = { isActive?: boolean };
 const MarketPlace = ({ isActive = false }: Props) => {
   return (
     <svg
-      width="24px"
-      height="24px"
+      width="16px"
+      height="16px"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
     >

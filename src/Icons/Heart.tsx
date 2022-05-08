@@ -5,8 +5,8 @@ const Heart = ({ isActive = false }: IconProps) => {
   return (
     <svg
       viewBox="0 0 490.4 490.4"
-      width="24px"
-      height="24px"
+      width="16px"
+      height="16px"
       xmlns="http://www.w3.org/2000/svg"
     >
       <g>

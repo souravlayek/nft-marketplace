@@ -10,7 +10,7 @@ const MarketPlaceMenu = (props: Props) => {
   const router = useRouter();
   return (
     <div className="marketPlaceMenu">
-      <MenuTitle title="Dashboard" />
+      <MenuTitle title="Marketplace" />
         <div className="menuList">
           {MARKETPLACE_MENU.map(({ path, name, icon }) => (
             <MenuItem

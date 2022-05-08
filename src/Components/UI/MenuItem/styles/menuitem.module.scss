@@ -1,8 +1,8 @@
 @import "/styles/constant.scss";
 
 .menuItem {
-  height: 25px;
-  margin: 20px 0;
+  height: 20px;
+  margin: 15px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,12 +24,13 @@
     .label {
       line-height: 100%;
       color: $secondaryColor;
+      font-size: 14px;
     }
   }
 
   .sidebar {
     width: 3px;
-    height: 25px;
+    height: 20px;
     background-color: $primaryColor;
   }
 }

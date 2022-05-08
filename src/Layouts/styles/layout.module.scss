@@ -1,27 +1,58 @@
 @import "/styles/constant.scss";
+
 .mainWrapper {
   @include glassProperty;
   width: calc(100vw - 3rem);
   height: calc(100vh - 3rem);
   border-radius: 10px;
   display: flex;
+
   .sidebar {
     flex: 1;
-    padding: 15px 0 0 15px;
     border-right: 1px solid $borderColor;
-  }
-  .logo {
     display: flex;
     flex-direction: column;
-    span {
-      line-height: 110%;
-      font-size: 20px;
-      font-weight: 500;
-      font-style: italic;
-      color: $secondaryColor;
+    height: 100%;
+
+    .logo {
+      padding: 15px 0 0 15px;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        line-height: 110%;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: italic;
+        color: $secondaryColor;
+      }
+    }
+
+    .menu {
+      margin-top: 20px;
+
+      .marketPlaceMenu {
+        padding: 15px 0 0 15px;
+      }
+
+      .profileMenu {
+        padding-top: 40px;
+        margin-top: 40px;
+        border-top: 1px solid $borderColor;
+        padding: 15px 0 0 15px;
+
+      }
+    }
+
+    .logoutButton {
+      height: 100%;
+      display: flex;
+      padding-left: 15px;
+      align-items: flex-end;
     }
   }
+
   .main {
-    flex: 3;
+    flex: 5;
   }
 }

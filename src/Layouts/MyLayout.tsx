@@ -1,4 +1,5 @@
-import { MarketPlaceMenu, ProfileMenu } from "Components";
+import { MarketPlaceMenu, MenuItem, ProfileMenu } from "Components";
+import { LogoutIcon } from "Icons";
 import React from "react";
 import styles from "./styles/layout.module.scss";
 type Props = {
@@ -13,12 +14,16 @@ const MyLayout = (props: Props) => {
           <span>PLAYGROUND</span>
         </div>
         <div className={styles.menu}>
+          <div className={styles.marketPlaceMenu}>
           <MarketPlaceMenu />
+          </div>
           <div className={styles.profileMenu}>
             <ProfileMenu />
           </div>
         </div>
-        <div className={styles.logoutButton}></div>
+        <div className={styles.logoutButton}>
+          <MenuItem label="Disconnect" icon={LogoutIcon} />
+        </div>
       </div>
       <main className={styles.main}>
         <div className={styles.topBar}></div>
