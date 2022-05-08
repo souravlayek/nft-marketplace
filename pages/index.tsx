@@ -1,8 +1,9 @@
+import { TopBar } from 'Components/PageComponents/HomePage';
 import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return <div>
-    Hello this is homepage
+    <TopBar />
   </div>;
 }
 
