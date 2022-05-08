@@ -1,0 +1,39 @@
+@import "/styles/constant.scss";
+
+.heroSection {
+  position: relative;
+  border: 2px solid $borderColor;
+  padding: 30px 10px;
+  border-radius: 0 20px 0 20px;
+
+  .text {
+    width: 35%;
+
+    h1 {
+      color: $secondaryColor;
+      line-height: 110%;
+      font-weight: 400;
+      letter-spacing: 1px;
+
+      span {
+        color: $primaryColor;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 20px 0;
+    }
+  }
+
+  .image {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 30%;
+    transform: rotate(37deg);
+  }
+}
