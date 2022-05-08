@@ -1,0 +1,15 @@
+.topBar {
+  display: flex;
+  gap: 15px;
+
+  .searchBox {
+    margin-left: 10px;
+    width: 75%;
+  }
+
+  .profileBox {
+    margin: 10px 0;
+    padding-right: 20px;
+    width: 25%;
+  }
+}

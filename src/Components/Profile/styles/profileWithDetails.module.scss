@@ -1,0 +1,37 @@
+@import "/styles/constant.scss";
+.profileWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  .primaryDetails{
+    display: flex;
+    gap: 5px;
+    .details {
+      .name {
+        font-weight: 400;
+        color: $secondaryColor;
+        line-height: 105%;
+      }
+      .userType {
+        font-size: 12px;
+        font-weight: 300;
+        color: $secondaryColor;
+      }
+    }
+  }
+  .notificationIcon {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    .activeBadge {
+      position: absolute;
+      top: 2px;
+      right: 1px;
+      width: 4px;
+      height: 4px;
+      background-color: red;
+      border-radius: 50%;
+    }
+  }
+}
