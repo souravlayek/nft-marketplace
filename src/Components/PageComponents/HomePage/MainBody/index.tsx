@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, TopSellers, JustDropped } from "./fragments";
+import { Hero, TopSellers, JustDropped, AuctionCard } from "./fragments";
 import styles from "./styles/mainBody.module.scss";
 type Props = {};
 
@@ -11,7 +11,9 @@ const MainBodyContent = (props: Props) => {
         <TopSellers />
         <JustDropped />
       </div>
-      <div className={styles.right}></div>
+      <div className={styles.right}>
+        <AuctionCard />
+      </div>
     </div>
   );
 };

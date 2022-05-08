@@ -58,6 +58,16 @@
     }
     .content {
       height: calc(100% - 70px);
+      max-height: calc(100% - 70px);
+      overflow-y: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 }
